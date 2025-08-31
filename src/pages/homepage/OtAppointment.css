@@ -1,0 +1,14 @@
+#index .section-container.ot-appointment {
+  background-color: var(--font-navy);
+}
+#index .landingpage-buttons {
+  background-color: #ff0;
+  padding: 1rem;
+  text-align: center;
+  max-width: 200px;
+  margin: 2rem auto;
+  font-weight: 700;
+}
+#index .landingpage-buttons a {
+  color: var(--font-brown);
+}

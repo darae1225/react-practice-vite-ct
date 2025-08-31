@@ -1,0 +1,79 @@
+footer {
+  grid-area: footer;
+  background-color: var(--brown);
+  padding: 1rem 2rem 0 2rem;
+  border-radius: 30px;
+}
+footer address .contact-text {
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 1em;
+}
+footer .footer-main {
+  display: grid;
+  grid-template-areas: "logo" "address" "empty";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+footer .left-footer {
+  grid-area: logo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-logo-img {
+  width: 152px;
+  height: 152px;
+}
+footer .social-media {
+  display: flex;
+}
+footer .facebook-logo,
+footer .youtube-logo {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+footer .social-media img {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+footer .address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--background-color);
+}
+footer .address a {
+  color: var(--box-color);
+}
+footer .address a:hover {
+  color: var(--link-color);
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright p {
+  margin-top: 1em;
+  color: var(--background-color);
+}
+
+footer .copyright nav,
+footer .copyright nav a {
+  color: var(--background-color);
+}
+footer .copyright a:hover {
+  color: var(--link-color);
+}
+footer .copyright-statement {
+  color: beige;
+  margin-top: 0;
+  margin-bottom: 0;
+}

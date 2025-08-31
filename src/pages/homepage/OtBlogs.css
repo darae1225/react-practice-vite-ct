@@ -1,0 +1,23 @@
+#index .ot-blogs {
+  background-color: var(--orange);
+}
+#index .blogs-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+#index .blogs-content {
+  text-align: center;
+}
+#index .blogs-content img {
+  max-width: 100%;
+  height: auto;
+}
+#index .ot-blogs h1 {
+  color: var(--font-navy);
+}
+#index .blogs-content h2 {
+  color: var(--font-navy);
+}

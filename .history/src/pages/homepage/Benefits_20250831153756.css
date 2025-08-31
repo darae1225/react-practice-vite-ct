@@ -1,0 +1,21 @@
+#index .ot-benefits {
+  background-color: var(--primary-color);
+}
+#index .ot-benefits h1 {
+  color: var(--brown);
+}
+#index .benefits-container {
+  text-align: center;
+}
+#index .benefits-content {
+  margin-bottom: 1rem;
+}
+#index .benefits-content h2 {
+  color: var(--font-brown);
+  margin-bottom: 0.5rem;
+}
+#index .benefits-content p {
+  color: var(--font-brown);
+  width: 600px;
+  margin: auto;
+}

@@ -1,0 +1,27 @@
+header .nav-logo-img {
+  width: 100px;
+  height: 100px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  height: 80px;
+  grid-area: header;
+  align-content: center;
+  font-weight: 700;
+  margin: 0 0 2rem 0;
+  border-radius: 30px;
+  background-color: var(--brown);
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+header .menu li a {
+  color: var(--background-color);
+  padding: 0.7em;
+  font-size: 20px;
+}

@@ -1,0 +1,50 @@
+#pricing {
+  padding: 0;
+}
+#pricing h2 {
+  color: var(--font-white);
+}
+#pricing .pricing {
+  display: grid;
+  grid-template-areas: "ndis" "medicare" "private";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  background-color: var(--primary-color);
+  color: var(--font-white);
+  justify-content: center;
+  padding: 0 100px;
+}
+#pricing .pricing section {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+#pricing .plans {
+  margin-bottom: 0.5rem;
+}
+#pricing .billing {
+  min-height: auto;
+}
+#pricing .billing p {
+  color: var(--font-white);
+}
+#pricing .rate {
+  font-size: 30px;
+}
+#pricing .session {
+  text-align: right;
+}
+#pricing .pricing-info {
+  list-style-type: disc;
+}
+#pricing summary {
+  padding: 1rem 0;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  color: var(--font-white);
+}
+#pricing caption {
+  font-size: 2em;
+  padding: 15px;
+}

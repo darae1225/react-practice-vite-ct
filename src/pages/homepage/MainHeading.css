@@ -1,0 +1,5 @@
+#index .main-heading {
+  text-align: center;
+  padding: 2rem 10rem;
+  color: var(--font-navy);
+}

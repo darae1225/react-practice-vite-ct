@@ -1,0 +1,25 @@
+#index .faq {
+  background-color: var(--green);
+}
+#index .faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+#index .faq details {
+  background-color: var(--background-color);
+  padding: 20px;
+}
+#index .faq summary {
+  color: var(--brown);
+  font-weight: 700;
+}
+#index .faq p {
+  color: var(--font-brown);
+}
+#index .faq li {
+  color: var(--font-brown);
+  font-weight: 700;
+}
