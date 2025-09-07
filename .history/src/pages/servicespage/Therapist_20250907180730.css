@@ -1,0 +1,44 @@
+#expertise .therapist {
+  display: grid;
+  grid-template-areas: "intro" "image";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  background-color: var(--primary-color);
+}
+#expertise h2 {
+  color: var(--font-navy);
+}
+#expertise .therapist p {
+  color: var(--font-navy);
+  margin: 1rem 0;
+  font-weight: 700;
+}
+#expertise aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#expertise .main-therapist img {
+  width: 327px;
+  height: 478px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 810px) {
+  #expertise .therapist {
+    display: flex;
+    flex-flow: nowrap column;
+  }
+  #expertise .therapist article {
+    order: 1;
+  }
+}
+@media screen and (max-width: 425px) {
+  #expertise .main-therapist img {
+    width: 200px;
+    height: auto;
+  }
+  #pricing .section-container {
+    padding: 0.5em;
+  }
+}

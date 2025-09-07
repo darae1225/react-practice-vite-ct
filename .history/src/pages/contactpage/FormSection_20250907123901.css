@@ -1,0 +1,114 @@
+#contact .section {
+  background-color: var(--primary-color);
+}
+#contact span {
+  color: #d20f02;
+}
+#contact p {
+  text-align: center;
+  color: var(--font-navy);
+  font-weight: 700;
+}
+#contact form {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+#contact fieldset {
+  text-align: center;
+  border: none;
+  padding: 2em;
+  margin: 2em 0;
+  max-width: 500px;
+  width: 100%;
+  background-color: var(--box-color);
+  border-radius: 30px;
+  margin-bottom: 2em;
+  color: var(--font-navy);
+}
+#contact .details {
+  display: inline-block;
+  max-width: 49%;
+  width: 100%;
+  text-align: left;
+}
+#contact .home-address {
+  text-align: left;
+}
+#contact .address {
+  display: inline-block;
+  max-width: 32%;
+  width: 100%;
+  text-align: left;
+}
+#contact .block-label {
+  display: block;
+}
+#contact .message {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+#contact .message input {
+  width: 100%;
+  height: 100px;
+  padding: 0 0 80px 0;
+  box-sizing: border-box;
+}
+
+#contact .tooltip {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  left: 90%;
+  width: 12em;
+  padding: 0.5em;
+  font-weight: 400;
+  color: #fff;
+  background-color: var(--secondary-color);
+  border: solid 2px var(--secondary-color);
+  border-radius: 10px;
+  transition: transform 1s;
+  z-index: 1;
+}
+
+#contact .error {
+  color: #d0170c;
+}
+
+#contact span.error {
+  padding-left: 10px;
+}
+#contact input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin-top: 10px;
+  width: 100%;
+}
+#contact .terms input {
+  transform: scale(2);
+  margin: 10px;
+}
+#contact fieldset section {
+  padding-top: 10px;
+}
+#contact #submit {
+  background-color: var(--secondary-color);
+  padding: 10px 155px;
+  color: var(--font-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+#contact #submit:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid #fff;
+  transition: background-color 0.5s ease;
+}
+#contact #submit:active {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--font-white);
+}

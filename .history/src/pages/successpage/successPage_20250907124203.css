@@ -1,0 +1,20 @@
+#success section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+#success .success-section {
+  height: 300px;
+}
+#success a {
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 20px;
+}
+#success p {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0.5em;
+}

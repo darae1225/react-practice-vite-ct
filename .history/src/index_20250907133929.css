@@ -1,0 +1,510 @@
+:root {
+  --primary-color: #f7bf50;
+  --secondary-color: #271801;
+  --brown: #6e3321;
+  --orange: #ff964a;
+  --green: #425920;
+  --box-color: #ffe4c4;
+  --background-color: #fbe8c2;
+  --link-color: rgb(231, 159, 23);
+  --faq-questions: rgb(167, 224, 54);
+  --faq-answer: rgb(216, 216, 142);
+  --font-beige: beige;
+  --font-white: rgb(255, 255, 255);
+  --font-brown: #5d524e;
+  --font-navy: #2c3e50;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+  font-weight: 600;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+a:hover {
+  font-weight: 700;
+}
+a[aria-current="page"] {
+  font-weight: 700;
+  pointer-events: none;
+  color: #888;
+  cursor: default;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  max-height: 1000vh;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+}
+#trailer {
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+nav .menu a:hover {
+  background-color: beige;
+  color: var(--link-color);
+  border-radius: 20px;
+  padding: 0.7em;
+}
+nav .menu a:active {
+  border: 0.5px solid var(--secondary-color);
+}
+.nav-icon,
+.nav-icon-container {
+  display: none;
+}
+.logo {
+  text-align: center;
+}
+.logo-img {
+  width: 202px;
+  height: 202px;
+}
+.logo p {
+  font-weight: 700;
+}
+header {
+  height: 400px;
+}
+.section-container {
+  padding: 2em;
+  border-radius: 30px;
+  margin-bottom: 0.5em;
+}
+.heading {
+  margin: 3rem 0;
+}
+.heading h1 {
+  text-align: center;
+}
+#appointment,
+#blogs,
+#contact,
+#expertise,
+#index,
+#pricing {
+  grid-area: main;
+  margin: 0;
+}
+#appointment h1,
+#contact h1,
+#expertise h1,
+#index h1,
+#pricing h1 {
+  font-size: 2.2em;
+  margin: 0;
+  padding: 0;
+  color: var(--font-navy);
+}
+#appointment h2,
+#contact h2,
+#expertise h2,
+#index h2,
+#pricing h2 {
+  font-size: 2em;
+}
+#appointment h3,
+#contact h3,
+#expertise h3,
+#index h3,
+#pricing h3 {
+  font-size: 1.8em;
+}
+#appointment h4,
+#contact h4,
+#expertise h4,
+#index h4,
+#pricing h4 {
+  font-size: 1.7em;
+}
+
+.error-page-content {
+  height: 13rem;
+  text-align: center;
+  margin: 5rem;
+}
+.error-page-content p {
+  font-size: 1.5rem;
+}
+.error-page-link {
+  color: Orange;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  header .menu li a {
+    margin: 0;
+    padding: 0.3rem;
+  }
+  #index .main-heading {
+    padding: 2rem 1rem;
+  }
+  #index .main-roads-web {
+    display: none;
+  }
+  #index .main-roads-mobile {
+    display: inline-block;
+  }
+  #appointment h1,
+  #contact h1,
+  #expertise h1,
+  #index h1,
+  #pricing h1 {
+    font-size: 1.8em;
+    color: var(--font-navy);
+  }
+  #appointment h2,
+  #contact h2,
+  #expertise h2,
+  #index h2,
+  #pricing h2 {
+    font-size: 1.6em;
+  }
+  #appointment h3,
+  #contact h3,
+  #expertise h3,
+  #index h3,
+  #pricing h3 {
+    font-size: 1.4em;
+  }
+  #appointment h4,
+  #contact h4,
+  #expertise h4,
+  #index h4,
+  #pricing h4 {
+    font-size: 1.2em;
+  }
+  #pricing .pricing {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  #wrapper {
+    max-width: 650px;
+    width: 100%;
+  }
+  #trailer {
+    display: none;
+    pointer-events: none;
+  }
+  footer .copyright {
+    margin-top: 2em;
+  }
+  #expertise .therapist {
+    display: flex;
+    flex-flow: nowrap column;
+  }
+  #expertise .therapist article {
+    order: 1;
+  }
+  header nav {
+    display: none;
+  }
+  .nav-icon-container {
+    display: block;
+    background-color: var(--brown);
+    border-radius: 30px;
+    padding: 0 1em;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  .nav-icon-container {
+    height: 75px;
+  }
+  .nav-icon-container section nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 280px;
+    width: 100%;
+    background-color: #221f1f;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+  .nav-icon-container ul {
+    display: flex;
+    flex-flow: column;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .nav-icon-container li {
+    padding: 0;
+  }
+  .nav-icon-container li:hover {
+    border: 5px solid var(--link-color);
+  }
+  .nav-icon-container a {
+    color: var(--font-white);
+  }
+  #hamburger-menu {
+    display: none;
+  }
+  #hamburger-menu.show-menu {
+    display: block;
+    position: absolute;
+    height: 145px;
+    top: 0;
+    right: 80px;
+    /* pointer-events: none;
+    cursor: default; */
+  }
+  #nav-cont.nav-no-background {
+    background-color: var(--brown);
+    position: relative;
+    /* pointer-events: none;
+    cursor: default; */
+  }
+  #pricing .pricing {
+    grid-template-areas: "ndis" "medicare" "private";
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
+  #pricing .pricing section {
+    margin: 0.5em;
+    padding: 0.8em;
+    height: auto;
+  }
+  #pricing .billing h2,
+  #pricing .billing p,
+  #pricing p .rate {
+    padding: 0;
+    margin: 0;
+  }
+  #pricing .table {
+    display: none;
+  }
+}
+@media screen and (max-width: 715px) {
+  #index .main-heading {
+    font-size: 1.2rem;
+    padding: 1.2rem 0.5rem;
+  }
+  #appointment h1,
+  #contact h1,
+  #expertise h1,
+  #index h1,
+  #pricing h1 {
+    font-size: 1.6em;
+    color: var(--font-navy);
+  }
+  #appointment h2,
+  #contact h2,
+  #expertise h2,
+  #index h2,
+  #pricing h2 {
+    font-size: 1.4em;
+  }
+  #appointment h3,
+  #contact h3,
+  #expertise h3,
+  #index h3,
+  #pricing h3 {
+    font-size: 1.2em;
+  }
+  #appointment h4,
+  #contact h4,
+  #expertise h4,
+  #index h4,
+  #pricing h4 {
+    font-size: 1em;
+  }
+  #index .benefits-content p {
+    width: 400px;
+  }
+  #index .ot-services-content {
+    margin-bottom: 0.5rem;
+    width: 400px;
+  }
+  #youtube iframe {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  #index .business-philosophy {
+    min-height: 600px;
+  }
+  #index .logo-img {
+    width: 152px;
+    height: 152px;
+  }
+  #contact fieldset {
+    text-align: left;
+    padding: 1em;
+    margin: 1em;
+    max-width: 400px;
+    width: 100%;
+  }
+  #contact .mobile-details {
+    display: block;
+    max-width: 360px;
+    width: 100%;
+  }
+  #contact .mobile-address {
+    max-width: 177px;
+    width: 49%;
+  }
+  #contact .terms {
+    text-align: center;
+  }
+  #contact #submit {
+    background-color: var(--secondary-color);
+    padding: 10px 100px;
+    color: var(--font-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #appointment .section-container,
+  #contact .section-container {
+    padding: 0;
+    margin-bottom: 0.5em;
+  }
+  #appointment .des p,
+  #contact .des p {
+    padding-top: 1em;
+  }
+  #contact .map h2 {
+    padding-top: 1em;
+  }
+  #appointment fieldset {
+    margin: 1em;
+    text-align: left;
+    margin-top: 2em;
+    padding: 1em;
+  }
+  #appointment .mobile-details {
+    display: block;
+    max-width: 360px;
+    width: 100%;
+  }
+  #appointment .mobile-address {
+    max-width: 177px;
+    width: 49%;
+  }
+  #appointment .terms {
+    text-align: center;
+  }
+  #appointment #submit {
+    background-color: var(--secondary-color);
+    padding: 10px 100px;
+    color: var(--font-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  footer ul {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #wrapper {
+    max-width: 500px;
+    width: 100%;
+  }
+  .section-container {
+    padding: 1rem;
+  }
+  #index .benefits-content p {
+    width: 100%;
+  }
+  #index .ot-services-content {
+    width: 100%;
+  }
+  #pricing .billing {
+    height: 330px;
+  }
+  #success p {
+    font-size: 15px;
+  }
+  footer ul {
+    flex-flow: column;
+  }
+}
+@media screen and (max-width: 464px) {
+  #wrapper {
+    max-width: 400px;
+  }
+  footer .footer-main {
+    display: grid;
+    grid-template-areas: "address" "logo";
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+  footer .footer-main .address {
+    grid-area: address;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  footer .copyright {
+    margin: 2rem;
+  }
+  footer .copyright nav {
+    display: block;
+  }
+  #expertise aside {
+    margin-bottom: 20px;
+  }
+  #appointment .mobile-details {
+    max-width: 320px;
+    width: 100%;
+  }
+  #appointment,
+  #contact {
+    overflow-x: hidden;
+  }
+  #success p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #expertise .main-therapist img {
+    width: 200px;
+    height: auto;
+  }
+  #pricing .section-container {
+    padding: 0.5em;
+  }
+}

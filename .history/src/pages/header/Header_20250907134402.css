@@ -1,0 +1,97 @@
+header .nav-logo-img {
+  width: 100px;
+  height: 100px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+  height: 80px;
+  grid-area: header;
+  align-content: center;
+  font-weight: 700;
+  margin: 0 0 2rem 0;
+  border-radius: 30px;
+  background-color: var(--brown);
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+header .menu li a {
+  color: var(--background-color);
+  padding: 0.7em;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 810px) {
+  .nav-icon-container {
+    display: block;
+    background-color: var(--brown);
+    border-radius: 30px;
+    padding: 0 1em;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  .nav-icon-container {
+    height: 75px;
+  }
+  .nav-icon-container section nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 280px;
+    width: 100%;
+    background-color: #221f1f;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+  .nav-icon-container ul {
+    display: flex;
+    flex-flow: column;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .nav-icon-container li {
+    padding: 0;
+  }
+  .nav-icon-container li:hover {
+    border: 5px solid var(--link-color);
+  }
+  .nav-icon-container a {
+    color: var(--font-white);
+  }
+  #hamburger-menu {
+    display: none;
+  }
+  #hamburger-menu.show-menu {
+    display: block;
+    position: absolute;
+    height: 145px;
+    top: 0;
+    right: 80px;
+    /* pointer-events: none;
+    cursor: default; */
+  }
+  #nav-cont.nav-no-background {
+    background-color: var(--brown);
+    position: relative;
+    /* pointer-events: none;
+    cursor: default; */
+  }
+  header nav {
+    display: none;
+  }
+}
