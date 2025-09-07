@@ -1,4 +1,4 @@
-import "./SkipLink.css";
+import "SkipLink.css";
 
 export function SkipLink({ mainContentId }) {
   return (
