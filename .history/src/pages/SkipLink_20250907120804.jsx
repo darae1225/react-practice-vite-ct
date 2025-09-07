@@ -1,5 +1,3 @@
-import "./SkipLink.css";
-
 export function SkipLink({ mainContentId }) {
   return (
     <>
